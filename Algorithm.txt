@@ -1,0 +1,42 @@
+Step1:-import numpy
+Step2:-import pandas
+Step3:-import tenserflow
+Step4:-Numpy is a fundamental package for numerical computing with powerful array operations.
+Step5:-Pandas is a data manipulation and analysis library, offering data structures and functions.
+Step6:-We will use tenserflow because it helps to build and deploy projects or models like this with ease and efficiency.
+Step7:-We will gather some informations or data by which our program fetch images or that stored data as real or fake.
+Step8:-Extract images and save that file in which our project exists.
+Step9:-Define the location of that file in our program so that it can access all the data present in that file.
+Step10:-We will define the parameters like batch size,image height,image width and set the directory path.
+Step11:-Construct the model of CNN(Convolutional Neural Network).
+--------CNN(Convolutional Neural Network)---------
+(a)It's a type of deep neural network commonly used for image recognition and classification tasks, leveraging convolutional layers for feature extraction.
+(b)It works in layers and there are 7 different layers attached to it which makes the code executable.
+                   -----------------SEVEN DIFFERENT LAYERS OF CNN(Convolutional Neural Network)------------------- 
+                   (i)Input layers:-The input layer of a neural network defines the shape or dimensions of the input data, such as the size of an image.
+                   (ii)Convolutional layers:-Applies convolutional filters to the input data to detect features like edges,texture or patterns.
+                   (iii)Activation Layer(ReLU):-ReLU (Rectified Linear Unit) activation function introduces non-linearity by outputting the input directly if it's positive; otherwise, it outputs zero.
+                   (iv)Pooling layer:-It reduces the spatial dimensions of the input by downsampling, aiding in feature extraction and reducing computational complexity.
+                   (v)Fully connected layer:-It connects every neuron in one layer to every neuron in the next layer, often used in classification tasks for feature combination and output generation.
+                   (vi)Output layer:-It generates the final predictions of the model, typically using activation functions like softmax for classification tasks or linear activation for regression tasks.
+Step12:-We will use kaggle to gather huge amount of data(images) for our project.
+Step13:-We will create a TensorFlow dataset from images in the specified directory for training, with validation split, image resizing, and batching.
+Step14:-CNN(Convolutional Neural Network) is classified into two parts:- (i) Training and (ii) Testing
+Step15:-(i)Training:-It is the process of teaching a machine learning model to recognize patterns and make predictions based on labeled examples.
+Step16:-(ii)Testing:-It is the process which is responsible for the image detection wheather image is fake or real.
+Step17:-In training section We will use directory provided by tenserflow that load image dataset from the specified directory for training and validation.
+Step18:- We will preprocess image data from a test directory, creating a validation dataset, and assigns class names.
+Step19:-Import matplotlib.
+Step20:-Matplotlib is a plotting library for creating static, interactive, and animated visualizations in Python.
+Step21:-We will make a sample of images from the training dataset, aiding in data exploration and understanding.
+Step22:-We will use the concept of normalisation to make sure all input data have similar scales, which helps training the model effectively.
+Step23:-Normalisation is of two types:-(i) Batch Normalisation and (ii) Layer Normalisation
+Step24:-In this project we will be going to use Layer Normalisation which is used through the tf.keras.layers.Rescaling(1./255) layer, which rescales the pixel values of the images to the range [0,1].
+Step25:-We will make a portion of code to print the shape of image and label batches, normalizes the dataset, and displays pixel value ranges.
+Step26:-Now we will use the CNN layers to define and create a convolutional neural network (CNN) model for image classification tasks.
+Step27:-There are many layers associated with this CNN model which we are going to use.
+Step28:-Working of models:-This model is designed for image classification tasks with two classes, where the input images are processed through convolutional and pooling layers to extract features and then next layer start its work.
+Step29:-As we have created models and defining how each layer work then at last we will define some functions to exectue this CNN model.
+Step30:-So, we will define functions which will help our project in execution in easy and efficient way.
+Step31:-The image has passed through the convolutional layers and has been flattened into a vector. This vector is then fed into the fully connected layer(s), where the model makes predictions based on the learned features. The activation function of the last layer might be used to determine whether the image is classified as real or fake..
+Step32:-Last layer of model is Output layer so here we will get our output wheather the image is real or fake.
